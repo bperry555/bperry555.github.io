@@ -1,7 +1,14 @@
 /* General Page Styling */
-body {
+@media (max-width: 767px) {
+    body {
+        background-color: rgb(25,185,190);
+    }
+}
+@media (min-width: 767px) {
+    body {
     background-color:rgb(225, 225, 225);
     margin-bottom: 60px;
+    }
 }
 html {
     position: relative;
@@ -18,12 +25,7 @@ html {
     padding-left: 3rem;
 }
 /* Navbar Styling*/
-@media (max-width: 767.98px){
-.navbar-custom {
-    background-color: teal;
-    color: black
-    }
-}
+
 .navbar-custom {
     padding: 5px;
     border-bottom: 2px solid rgb(25, 185, 190);
@@ -50,14 +52,11 @@ a.nav-link {
     font-weight: bold;
     margin-right: 20px;
 }
-a.nav-link:hover {
+a.nav-link:hover, a.dropdown-item:hover {
     background-color: rgb(25, 185, 190);
     color: white;
 }
-a.dropdown-item:hover {
-    color:white ;
-    background-color: rgb(25, 185, 190);
-}
+
 a.dropdown-item:active {
     color: white;
     background-color: rgb(25, 185, 190);
